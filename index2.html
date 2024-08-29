@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Forgot Password Form -->
+        <form class="forgot-password-form" id="forgotPasswordForm">
+            <h2>Forgot Password</h2>
+            <p class="instruction">Enter your email address to receive an OTP for password reset.</p>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <button type="submit">Send OTP</button>
+        </form>
+
+        <!-- OTP and Set New Password Form -->
+        <form class="otp-password-form" id="otpPasswordForm" style="display: none;">
+            <h2>Reset Password</h2>
+            <p class="instruction">Enter the OTP sent to your email and set a new password.</p>
+            <div class="input-group">
+                <label for="otp">OTP</label>
+                <input type="text" id="otp" name="otp" placeholder="Enter your OTP" required>
+            </div>
+            <div class="input-group">
+                <label for="newPassword">New Password</label>
+                <input type="password" id="newPassword" name="newPassword" placeholder="Enter your new password" required>
+            </div>
+            <button type="submit">Reset Password</button>
+        </form>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
