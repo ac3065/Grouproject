@@ -1,1 +1,1 @@
-# About Page is currently we are styling. we halted it for further development and well come back soon after major development of the project.
+# About Page is currently we are styling. we halted its styling for further major development. We'll come back soon after completing major development of the project.
