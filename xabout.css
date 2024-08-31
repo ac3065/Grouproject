@@ -1,0 +1,385 @@
+
+#marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#marquee img {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #ddd;
+    background-color: #f9f9f9;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    animation: fadeInBody 1s ease-in-out;
+}
+
+:root {
+    --bg: #004e92;
+    --red: red;
+}
+
+/* Header Section */
+.header {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgb(54, 79, 118)), url('WhatsApp Image 2024-08-31 at 21.00.15_8c826afb.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeInDown 2s ease-in-out;
+}
+
+/* Introduction Section */
+.introduction {
+    padding: 20px;
+    text-align: center;
+    color: var(--red);
+    font-size: 1.2rem;
+    animation: fadeInUp 1.5s ease;
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows the gallery to wrap on smaller screens */
+    animation: fadeIn 1.5s ease;
+}
+
+.gallery img {
+    width: 25%;
+    border-radius: 15px;
+    transition: transform 0.8s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+#marquee {
+    animation: fadeIn 2s forwards;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #e9ecef;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    animation: slideInLeft 2s ease;
+}
+
+.card {
+    width: 45%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    margin: 10px 0; /* Adds spacing between cards */
+    animation: fadeInUp 1.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h1 {
+    animation: pulseText 2s infinite;
+    color: var(--bg);
+    font-size: 2rem;
+    text-align: center;
+}
+.card h1 span {
+    animation: pulseText 2s infinite;
+    color: var(--red);
+    font-size: 2rem;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    border-radius: 25px;
+}
+.card-text ol li span{
+    color: var(--red);
+}
+
+/* Collection Section */
+.collection {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+
+.collection h3 span {
+    color: var(--red);
+    font-size: 2rem;
+}
+.collection h3 {
+    color: var(--bg);
+    font-size: 2rem;
+}
+
+.collection-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.collection-item {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 25px;
+    transition: 1s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1.5s ease;
+}
+
+.collection-item:hover {
+    transform: scale(1.1);
+    border: 5px solid var(--bg);
+}
+
+/* Services Section */
+.services {
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+    animation: fadeIn 2s ease;
+    transition: 1s;
+}
+.services h3{
+    color: var(--bg);
+    font-size: 2rem;
+}
+.services h3 span {
+    color: var(--red);
+    font-size: 2rem;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    animation: fadeInUp 1.5s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    border: 5px solid var(--bg);
+}
+
+/* Team Section */
+.team {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+.team h3{
+    color: var(--bg);
+    font-size: 2rem;
+}
+.team h3 span{
+    color: var(--red);
+    font-size: 2rem;
+}
+
+.team-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Wraps team members on smaller screens */
+}
+
+.team-member {
+    width: 200px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Section */
+.footer {
+    background-color: var(--bg);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    animation: fadeInUp 1.5s ease;
+}
+
+/* Social Media Icons Styling */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 15px;
+    animation: fadeIn 1.5s ease;
+}
+
+.social-media a {
+    font-size: 24px;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media .ig:hover {
+    color: #ff0040; /* Highlight color */
+    transform: scale(1.2);
+}
+.social-media .fb:hover {
+    color: #004cff; /* Highlight color */
+    transform: scale(1.2);
+}
+.social-media .x:hover {
+    color: #00bfff; 
+    transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulseText {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-media {
+        gap: 15px;
+    }
+
+    .social-media a {
+        font-size: 20px;
+    }
+
+    .header {
+        padding: 50px 20px;
+    }
+
+    .gallery img {
+        width: 100%; /* Adjust image width on smaller screens */
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .collection-item, .service-item {
+        width: 100%;
+    }
+
+    .team-carousel {
+        flex-direction: column; /* Stack team members vertically on smaller screens */
+    }
+
+    .team-member {
+        width: 80%; /* Adjust team member width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .social-media {
+        gap: 10px;
+    }
+
+    .social-media a {
+        font-size: 18px;
+    }
+}
